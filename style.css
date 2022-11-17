@@ -1,28 +1,43 @@
 body{
     padding: 0;
-    margin: 0
+    margin: 0;
+    background-image: url(Kepek/hetter2.jpg);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+h1{
+  text-align: center;
 }
 ul {
-list-style-type: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  
 }
-a:link {
-    color: blue;
-  }
-  
-  
-  a:visited {
-    color:orangered;
-  }
-  
-  
-  a:hover {
-    color: red;
-  }
-  
-  
-  a:active {
-    color: black;
-  }
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: rgb(13, 12, 12);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border-bottom: 1px groove gray;
+}
+
+li a:link{
+  background-color: rgb(235, 168, 216);
+  margin: 5px;
+}
+li a:hover {
+  background-color: rgb(173, 79, 147);
+}
+
+
   main {
     display: grid;
     grid-template-columns: 3fr 1fr;
@@ -36,46 +51,68 @@ a:link {
   }
 
   header{
+    
     grid-area: h;
   }
   nav {
+    padding: 0;
     grid-area: n;
   }
   article {
+    text-align: center;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-area: ar;
   }
+  img {
+    width: 150px;
+    height: 150px;
+  }
 aside {
+  margin-top: 38px;
+  background-color: white;
     grid-area: as;
 }
 footer{
+  text-align: center;
+  margin-top: 30px;
+  background-color:  white;
     grid-area: f;
 }
-
-@media screen and (max-width:700px) {
-    main {
-        grid-template-columns: 3fr 1fr;
-    grid-template-areas: 
-    "h h"
-    "n n"
-    "ar as"
-    "ar as"
-    "f f"
-    ;
-    }
-    
+ .acotar {
+  background-color: white;
+  margin: 10px;
+ }
+ span{
+  border-style: groove;
+  text-align: right;
+  float: right;
+ }
+ .tog {
+  background-color: white;
+  margin: 10px;
+ }
+ .dark{
+  background-color: white;
+  margin: 10px;
+ }
+ .verity{
+  background-color: white;
+  margin: 10px;
+ }
+.end {
+  background-color: white;
+  margin: 10px;
 }
-@media screen and (max-width:400px) {
-    main {
-        grid-template-columns: 3fr ;
-    grid-template-areas: 
-    "h"
-    "n"
-    "ar"
-    "as"
-    "ar"
-    "as"
-    "f"
-    ;
-    }
-    
+button{
+  float: left;
+}
+.tavolabb{
+  margin:30px
+}
+@media only screen and (max-width: 700px) {
+  article {
+    grid-template-columns: 1fr 1fr ;
+  }
 }
