@@ -12,7 +12,7 @@
     <main>
         <header><h1>Webáruház</h1></header>
         <nav>
-            <ul>
+            <ul class="menu">
             <li><a href="#">Kezdőlap</a></li>
             <li><a href="#">Ajánlások</a></li>
             <li><a href="#">Akciók</a></li>
@@ -20,48 +20,65 @@
     </nav>
     
         <article>
-            <div class="acotar">
+            <div class="termek">
                 <h2>Acotar sorozat</h2>
                 <div><img src="Kepek/acotarweb.jpg" alt="acotar"></div>
                 <p>Romantikus fantasy, szuperül felépített világgal. Író: Sarah J. Maas</p>
-                <a href="#"><button>Kosárba</button></a>
-                <span>16000Ft</span>
+                <div>
+                <button>Kosárba</button>
+                <span>16000Ft</span></div>
             </div>
-            <div class="tog">
+            <div class="termek">
                 <h2>Tog sorozat</h2>
                 <div><img src="Kepek/togweb.jpg" alt="tog"></div>
                 <p>Akciódús fantasy, szuper világ, erős karakterekkel. Író: Sarah J. Maas</p>
-                <a href="#"><button>Kosárba</button></a>
-                <span>30000Ft</span>
+                <div>
+                    <button>Kosárba</button>
+                    <span>30000Ft</span></div>
             </div>
-            <div class="dark">
+            <div class="termek">
                 <h2>Dark Elemets </h2>
                 <div><img src="Kepek/darkelementsweb.jpg" alt="dark"></div>
                 <p>Izgalmas trilógia, angyalokról, démonokról. Író: Jennifer L. Amentrout</p>
-                <a href="#"><button>Kosárba</button></a>
-                <span>12000Ft</span>
+                <div>
+                    <button>Kosárba</button>
+                    <span>12000Ft</span></div>
             </div>
-            <div class="verity">
+            <div class="termek">
                 <h2>Verity</h2>
                 <div><img src="Kepek/verity2.jpg" alt="verity"></div>
                 <p>Női pszichotriller, csak erős idegzetűeknek! Író: Colleen Hoover</p>
-                <a href="#"><button>Kosárba</button></a>
-                <span>4000Ft</span>
+                <div>
+                    <button>Kosárba</button>
+                    <span>4000 Ft</span></div>
             </div>
-            <div class="end">
+            <div class="termek">
                 <h2>It end with us</h2>
                 <div><img src="Kepek/endwith.JPG" alt="end"></div>
                 <p>Felkavaró, de mégis romantikus történet. Író: Colleen Hoover</p>
-                <a href="#"><button>Kosárba</button></a>
-                <span>4000Ft</span>
+                <div>
+                    <button>Kosárba</button>
+                    <span>4000 Ft</span></div>
             </div>
         </article>
         <aside>
-
+            <h2 id="oldal">A kosár tartalma</h2>
+            
+              <p id="kosar">
+               <span class="nevek">Acotar</span>  <span class="kerettelen">16000Ft</span>  <span class="kerettelen"><img class="azx" src="Kepek/x.png" alt="torles"></span>
+               <span class="nevek">Verity</span>  <span class="kerettelen">4000Ft</span>  <span class="kerettelen"><img class="azx" src="Kepek/x.png" alt="torles"></span>
+               <span class="nevek">Tog</span>  <span class="kerettelen">30000Ft</span>  <span class="kerettelen"><img class="azx" src="Kepek/x.png" alt="torles"></span>
+               <span class="nevek">Dark Elemets</span>  <span class="kerettelen">12000Ft</span>  <span class="kerettelen"><img class="azx" src="Kepek/x.png" alt="torles"></span>
+            </p>
+            <p id="kozep">62000Ft</p>
+            
+            <button id="fizet">Tovább a fizetéshez</button>
         </aside>
     
         <footer>
-          <br>            Papp Nikoletta
+            <br>
+             Papp Nikoletta
+        <br>
         <br>
         <br>
         </footer>
